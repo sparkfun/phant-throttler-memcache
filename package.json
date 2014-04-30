@@ -1,6 +1,6 @@
 {
   "name": "phant-throttler-memcache",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "lib/phant-throttler-memcache.js",
   "description": "memcache based rate limiting module for phant",
   "homepage": "https://github.com/sparkfun/phant-throttler-memcache",
