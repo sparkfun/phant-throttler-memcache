@@ -19,7 +19,9 @@
       "type": "GPL-3.0"
     }
   ],
-  "dependencies": {},
+  "dependencies": {
+    "memcached": "^0.2.8"
+  },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",
     "grunt-contrib-nodeunit": "~0.2.0",
