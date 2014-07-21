@@ -2,7 +2,7 @@
   "name": "phant-throttler-memcache",
   "version": "1.0.0",
   "main": "lib/phant-throttler-memcache.js",
-  "description": "memcache based rate limiting module for phant",
+  "description": "Memcache based rate limiting module for phant",
   "homepage": "https://github.com/sparkfun/phant-throttler-memcache",
   "bugs": "https://github.com/sparkfun/phant-throttler-memcache/issues",
   "author": {
@@ -14,11 +14,7 @@
     "type": "git",
     "url": "git://github.com/sparkfun/phant-throttler-memcache"
   },
-  "licenses": [
-    {
-      "type": "GPL-3.0"
-    }
-  ],
+  "license": "GPL-3.0",
   "dependencies": {
     "memcached": "^0.2.8"
   },
@@ -32,5 +28,31 @@
   },
   "scripts": {
     "test": "grunt"
+  },
+  "phantConfig": {
+    "name": "Memcache",
+    "options": [
+      {
+        "label": "Host",
+        "name": "host",
+        "default": "localhost:11211",
+        "type": "text",
+        "description": "IP address or hostname and port separated by a colon (host:port)"
+      },
+      {
+        "label": "Limit",
+        "name": "limit",
+        "default": "100",
+        "type": "number",
+        "description": "Number of requests allowed in window"
+      },
+      {
+        "label": "Window",
+        "name": "window",
+        "default": "900",
+        "type": "number",
+        "description": "Window (in seconds)"
+      }
+    ]
   }
 }
